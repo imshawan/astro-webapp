@@ -1,0 +1,30 @@
+<div class="mt-5 pt-5">
+    {{#each readings}}
+        <div class="cards-navigation-container container d-flex flex-wrap justify-content-center position-relative mb-4">
+            <div class="reading-card row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img class="mx-auto d-flex my-sm-4" src="{{image}}"></img>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9 py-md-5 py-lg-4 px-sm-4">
+                    <div class="mt-2 prediction-heading prediction-content">
+                        {{title}}
+                    </div>
+                    <div class="prediction-content body-text mt-2 pb-4 mb-sm-4 overflow-hidden" style="word-break: break-word;">
+                        {{prediction}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+
+<div class="section-body mt-5">
+    <div class="col-11 mx-auto justify-content-center other-horoscopes">
+        <div class="section-heading text-center pt-5">Other horoscope for you</div>
+
+        <div class="{{{otherHoroscopeClass}}} row justify-content-center mt-5 d-flex flex-wrap px-5 mt-auto pt-5">
+
+        </div>
+    </div>
+</div>

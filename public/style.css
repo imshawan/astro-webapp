@@ -1,0 +1,810 @@
+@font-face {
+  font-family: Avenir;
+  src: url(fonts/AvenirLTStd-Book.otf);
+}
+@font-face {
+  font-family: Timed;
+  src: url(fonts/Timed.woff);
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url(fonts/Helvetica-Neue-Bold_22498.ttf);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+.body-text {
+  font-size: 18px;
+}
+.astro-btn {
+  background-color: #74459A;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Avenir';
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.text-white {
+  font-family: 'Avenir';
+  color: #fff;
+}
+.text-black {
+  font-family: 'Avenir';
+  color: #000!important;
+}
+.background-img {
+  background: 0% 0% no-repeat padding-box;
+  z-index: -1;
+  position: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 180%;
+  margin-top: -28px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.company-logo {
+  text-align: left;
+  font-family: 'Helvetica Neue';
+  font-size: 37px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.navigation {
+  width: 500px;
+  height: 33px;
+}
+.nav-items {
+  padding: .3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.nav-items a {
+  color: #fff;
+  border-bottom: none;
+}
+.nav-active {
+  min-width: 87px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 35px;
+  background: #74459A 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 16px;
+  color: #fff;
+}
+.mobile-nav-acive {
+  height: 44px;
+  font-weight: 600;
+}
+
+.welcome-header-container {
+  width: 546px;
+  max-width: 90%;
+  height: 30px;
+  background: #74459A 0% 0% no-repeat padding-box;
+  position: absolute;
+  left: 0;
+  margin-top: 8rem;
+}
+.welcome-header {
+  text-align: right;
+  font-family: 'Avenir';
+  letter-spacing: 18.86px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+  position: absolute;
+    bottom: -6px;
+    right: 10px;
+}
+.company-name {
+  text-align: left;
+font-family: 'Timed';
+font-size: 80px;
+letter-spacing: 2.24px;
+color: #FFFFFF;
+text-transform: capitalize;
+margin-top: 10.5rem;
+opacity: 1;
+}
+.company-description {
+  text-align: left;
+font-family: 'Avenir';
+font-size: 24px;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+
+
+.section-heading {
+font-family: 'Avenir';
+font-weight: 600;
+font-size: 40px;
+letter-spacing: 1.12px;
+color: #FFFFFF;
+text-transform: uppercase;
+opacity: 1;
+}
+.prediction-heading {
+  font-family: 'Avenir';
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1.12px;
+  color: #000;
+  text-transform: uppercase;
+  opacity: 1;
+  }
+
+.sign-cards {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 18px;
+  width: calc(100% / 6 - 15px);
+  height: 190px;
+  cursor: pointer;
+}
+.sign-name {
+  margin-top: 7rem;
+}
+.zodiac-img-container {
+  height: 80%;
+}
+.zodiac-name-container {
+  font-family:  'Avenir';
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #0C0816;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-top: -14px;
+}
+
+.other-horoscopes {
+  background: #1A1526 0% 0% no-repeat padding-box;
+  min-height: 414px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.other-cards {
+  max-width: 137px;
+  position: relative;
+  margin-bottom: 4rem;
+  width: calc(100% / 4 - 20px);
+  height: 133px;
+  background: #74459A 0% 0% no-repeat padding-box;
+  border-radius: 17px;
+  opacity: 1;
+  cursor: pointer;
+}
+.other-cards-text {
+  color: #fff;
+  max-width: 133px;
+  text-transform: uppercase;
+  font-family: 'Avenir';
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0px;
+}
+.other-cards .square-1 {
+width: 80%;
+height: 80%;
+position: absolute;
+top: 15px;
+left: 10px;
+border: 1px solid #9673B3;
+border-radius: 10px;
+opacity: 1;
+background: transparent;
+}
+.other-cards .square-2 {
+width: 80%;
+height: 80%;
+position: absolute;
+top: 10px;
+left: 17px;
+border: 1px solid #9673B3;
+border-radius: 10px;
+opacity: 1;
+background: transparent;
+}
+
+footer {
+  background: url(images/footer-bg.png)  0% 0% no-repeat padding-box;
+  background-size: cover;
+  background-position: 0 -8px;
+  width: 100%;
+  opacity: 1;
+  border: none;
+  font-family: 'Avenir';
+  object-fit: cover;
+  position: relative;
+}
+.footer-bg-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+.footer-container {
+  margin-top: 4rem;
+}
+.footer-link-headings {
+  font-size: 20px;
+  font-weight: 600;
+}
+.links-ul a {
+  color: #fff;
+  text-align: left;
+  font-size: 18px;
+}
+.footer-copyright {
+  letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.error-heading {
+  font-size: 180px;
+  font-weight: 600;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #818181;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.about-us-container {
+  font-family: 'Avenir';
+  min-height: 551px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 18px;
+  opacity: 1;
+}
+.about-us-container-body {
+height: 333px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #151515;
+  opacity: 1;
+  overflow: hidden;
+}
+.zodiac-horoscope-container {
+  font-family: 'Avenir';
+  /* min-height: 845px; */
+  min-height: 550px;
+  border-radius: 18px;
+  opacity: 1;
+}
+.zodiac-horoscope-padding-container {
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 18px;
+}
+.zodiac-horoscope-area-bg {
+  background-image: url('/images/form-graphic.png');
+  background-position: top center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-size: calc(100% - 1rem); */
+}
+.zodiac-horoscope-container-body {
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #151515;
+  opacity: 1;
+  overflow: hidden;
+}
+.zodiac-horoscope-container-head-image img {
+  height: 125px;
+}
+.mission-vision-cards {
+  max-width: 445px;
+  min-width: 445px;
+  height: 284px;
+  border-radius: 18px;
+  opacity: 1;
+  overflow: hidden;
+}
+.mission-vision-cards-heading {
+  text-align: left;
+  font-size:  28px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.mission-vision-cards-body {
+  width: 370px;
+  height: 156px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 18px;
+letter-spacing: 0px;
+color: #79728B;
+opacity: 1;
+}
+.nav-card {
+  max-width: 326px;
+  height: 400px;
+  position: relative;
+  margin: 3rem;
+  width: calc(100% / 3 - 20px);
+  background: #74459A 0% 0% no-repeat padding-box;
+  border-radius: 17px;
+  opacity: 1;
+}
+.nav-card-text {
+  color: #fff;
+  max-width: 133px;
+  text-transform: uppercase;
+  font-family: 'Avenir';
+  font-size: 26px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+.nav-card-link {
+  width: 125px;
+height: 33px;
+  background: #0E0B17 0% 0% no-repeat padding-box;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.nav-card-link a {
+font-size: 14px;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
+opacity: 1;
+}
+.nav-card .square-1 {
+  width: 88%;
+  height: 88%;
+  position: absolute;
+  top: 29px;
+  left: 23px;
+  border: 1px solid #9673B3;
+  border-radius: 10px;
+  opacity: 1;
+  background: transparent;
+}
+.nav-card .square-2 {
+  width: 88%;
+  height: 88%;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  border: 1px solid #9673B3;
+  border-radius: 10px;
+  opacity: 1;
+  background: transparent;
+}
+.reading-card {
+  position: relative;
+  margin: 1rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 17px;
+  opacity: 1;
+  color: #000;
+}
+.prediction-content {
+  width: 95%;
+}
+.get-prediction-body {
+  margin-top: 3rem;
+}
+.get-prediction-section-body {
+  margin-top: 8rem;
+}
+.form-graphic {
+  position: absolute;
+}
+.get-prediction-head {
+  margin-top: 8rem;
+}
+.get-prediction-subhead {
+  font-size: 20px;
+  color: rgb(125, 125, 125);
+}
+.get-prediction-container {
+  padding-top: 3rem;
+  font-family: 'Avenir';
+  min-height: 605px;
+  max-width: 976px;
+  background-image: url('/images/form-graphic.png');
+  background-position: center;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: calc(100% - 4rem);
+  border-radius: 18px;
+  opacity: 1;
+}
+.get-prediction-container-body {
+  height: 333px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #151515;
+  opacity: 1;
+  overflow: hidden;
+}
+.predict-btn-container {
+  margin-top: 2rem;
+}
+.tarot-cards-outer {
+  margin: 20px auto 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+.tarot-cards-row {
+  position: relative;
+    min-height: 220px;
+}
+.tarot-card {
+  height: 274px;
+  float: left;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+  margin-right: -165px;
+  margin-bottom: 20px;
+}
+
+.card-picker {
+  /* background: #FFFFFF url(/img/form-graphic.png) no-repeat padding-box;
+  border-radius: 18px;
+  text-align: center;
+  background-size: 100%;
+  padding: 135px;
+  padding-top: 180px;
+  padding-left: 75px; */
+  width: 100%;
+}
+
+.card-list {
+  position: relative;
+  display: flex;
+  list-style: none;
+  height: 200px;
+}
+
+.card-list li img {
+  width: 100%;
+  transition: 0.3s;
+  height: 100%;
+  border: 1px dashed transparent
+}
+
+.card-list li {
+  --card-width: 200px;
+  margin-right: calc(33px - var(--card-width));
+  float: left;
+  width: var(--card-width);
+  height: calc(var(--card-width) * 1.5);
+  cursor: pointer;
+  transition: 0.3s;
+
+  position: absolute;
+  z-index: 9;
+}
+
+.card-list li:hover img {
+  transform: translate(0, -35px) rotate(1deg);
+}
+
+.card-list li.selected img {
+  transform: translate(0, -35px);
+  border-color: #86775f;
+  border-radius: 18px;
+}
+
+.shuffle {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+@media (max-width: 1285px) {
+  .tarot-card {
+    margin-right: -170px;
+  }
+}
+
+@media (max-width: 1285px) {
+  .hero-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1199.5px) {
+  .sign-name {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .mission-vision-cards {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+  .sign-cards {
+    width: calc(100% / 4 - 15px);
+  }
+  .nav-card {
+    width: calc(100% / 1 - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .body-text {
+    font-size: 16px;
+  }
+  .section-heading {
+    font-size: 36px;
+  }
+  .mission-vision-cards {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+  .sign-cards {
+    width: calc(100% / 4 - 15px);
+  }
+  .hero-image {
+    max-width: 100%;
+  }
+  .nav-card {
+    width: calc(100% / 1 - 20px);
+  }
+  .get-prediction-container {
+    padding-top: .5rem;
+    min-height: 460px;
+    max-width: 976px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: calc(100% - 4rem);
+  }
+  .get-prediction-head {
+    margin-top: 7.5rem;
+    font-size: 38px;
+  }
+  .get-prediction-subhead {
+    font-size: 18px;
+  }
+  .prediction-content {
+    width: 100%;
+  }
+  .zodiac-horoscope-container-body {
+    font-size: 16px;
+  }
+  .zodiac-horoscope-padding-container {
+    padding: 2rem;
+  }
+  .zodiac-horoscope-container-head-image img {
+    height: 100px;
+  }
+  .zodiac-horoscope-area-bg {
+    background-image: none;
+  }
+  .error-heading {
+    font-size: 150px;
+  }
+  .sign-name {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-1-5 {
+    max-width: 12.5%;
+    padding: 0px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .sign-cards {
+    max-width: calc(100% / 3 - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 30px;
+  }
+  .sign-cards {
+    width: calc(100% / 3 - 15px);
+  }
+  .text-right {
+    margin-top: 1.5rem!important;
+  }
+  .other-cards {
+    width: calc(100% / 3 - 20px);
+  }
+  .get-prediction-container {
+    min-height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 4rem);
+  }
+  .get-prediction-head {
+    margin-top: 6rem;
+    font-size: 30px;
+  }
+  .get-prediction-subhead {
+    font-size: 16px;
+  }
+  .get-prediction-body {
+    margin-top: 1rem;
+  }
+  .get-prediction-body .row {
+    width: 78%!important;
+  }
+  .predict-btn-container {
+    margin-top: 0px;
+  }
+  .zodiac-horoscope-padding-container {
+    padding: 1rem;
+  }
+  .zodiac-horoscope-container-head-image img {
+    height: 70px;
+  }
+  .sign-name {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-nav {
+    display: block!important;
+  }
+  .company-name {
+    font-size: 72px;
+  }
+  .hero-image-container {
+    display: flex;
+    margin-top: 4rem;
+  }
+  .hero-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+  }
+  .company-description {
+    font-size: 20px;
+  }
+  .section-heading {
+    font-size: 30px;
+  }
+  .about-us-container-body {
+    font-size: 14px;
+  }
+  .sign-cards {
+    width: calc(100% / 2 - 15px);
+  }
+  .text-right {
+    margin-top: 1.5rem!important;
+  }
+  .other-cards {
+    width: calc(100% / 3 - 20px);
+  }
+  .other-cards-text {
+    font-size: 16px;
+  }
+  .mission-vision-cards {
+    min-width: 0px;
+  }
+  .get-prediction-head {
+    margin-top: 6.5rem;
+    font-size: 28px;
+  }
+  .zodiac-horoscope-padding-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 475.99px) {
+  .sign-cards-container {
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+  }
+  .sign-cards {
+    max-width: calc(100% / 1 - 15px);
+  }
+  .text-right {
+    margin-top: 1.5rem!important;
+  }
+  .other-cards {
+    width: calc(100% / 2 - 20px);
+  }
+  .get-prediction-container {
+    min-height: 328px;
+    background-size: calc(100% - 2rem);
+  }
+  .get-prediction-head {
+    margin-top: 6rem;
+    font-size: 24px;
+  }
+  .get-prediction-subhead {
+    font-size: 14px;
+  }
+  .get-prediction-body {
+    margin-top: 1rem;
+  }
+  .get-prediction-body .row {
+    width: 92%!important;
+  }
+}

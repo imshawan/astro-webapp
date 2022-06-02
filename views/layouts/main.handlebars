@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>{{{title}}}</title>
+</head>
+<body>
+    <img class="background-img" src="/images/bg.png"></img>
+    <main>
+        <div class="navbar-header position-relative">
+            <div class="ml-5 mr-4 mt-4 d-flex justify-content-between">
+                <div class="company-logo">LOGO</div>
+                <div class="navigation d-none d-lg-flex mr-4 my-auto justify-content-between text-center">
+                    <div data-page-name="home" class="nav-items"><a href="/">Home</a></div>
+                    <div data-page-name="zodiacsign" class="nav-items"><a href="/zodiacsign">Zodiac Sign</a></div>
+                    <div data-page-name="numerology" class="nav-items"><a href="/numerology">Numerology</a></div>
+                    <div data-page-name="tarotcard" class="nav-items"><a href="/tarotcard">Tarot Card</a></div>
+                </div>
+
+
+                <div class="d-none d-sm-block d-md-block d-lg-none mobile-nav">
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn">&times;</a>
+                        <div data-page-name="home" class="nav-items ml-4 mr-4 mb-3 pt-2 mobile-nav-acive"><a href="/">Home</a></div>
+                        <div data-page-name="zodiacsign" class="nav-items ml-4 mr-4 mb-3 pt-2 mobile-nav-acive"><a href="/zodiacsign">Zodiac Sign</a></div>
+                        <div data-page-name="numerology" class="nav-items ml-4 mr-4 mb-3 pt-2 mobile-nav-acive"><a href="/numerology">Numerology</a></div>
+                        <div data-page-name="tarotcard" class="nav-items ml-4 mr-4 mb-3 pt-2 mobile-nav-acive"><a href="/tarotcard">Tarot Card</a></div>
+                    </div>
+                    <nav class="navbar navbar-light openbtn">
+                        <button class="navbar-toggler bg-light" type="button" >
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+        {{{body}}}
+
+        <footer class="page-footer font-small blue pt-4">
+            <!-- <img class="footer-bg-img" src="./images/footer-bg.png"> -->
+
+            <div class="ml-5 mr-5 footer-container text-center text-md-left">
+        
+                <div class="row">
+            
+                    <div class="col-md-3 mt-md-0 mt-3">
+            
+                        <h5 class="text-uppercase text-white company-logo">Logo</h5>
+            
+                    </div>
+            
+                    <hr class="clearfix w-100 d-md-none pb-3">
+            
+                    <div class="col-md-3 mb-md-0 mt-3 mb-3">
+            
+                        <h5 class="text-uppercase footer-link-headings text-white">Quick Links</h5>
+                
+                        <ul class="list-unstyled links-ul text-white">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/zodiacsign">Zodiac Sign</a>
+                            </li>
+                            <li>
+                                <a href="/numerology">Numerology</a>
+                            </li>
+                            <li>
+                                <a href="/tarotcard">Tarot Card</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+            
+                    <div class="col-md-3 mt-3 mb-md-0 mb-3">
+            
+                        <h5 class="text-uppercase text-white footer-link-headings">Horoscope</h5>
+                
+                        <div class="row">
+                            <ul class="list-unstyled col-6 col-md-6 col-sm-4 offset-sm-2 offset-md-0 links-ul">
+                                <li class="d-flex">
+                                    <a href="/zodiacsign/love?value=aries">Aries</a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="/zodiacsign/love?value=taurus">Taurus</a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="/zodiacsign/love?value=gemini">Gemini</a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="/zodiacsign/love?value=cancer">Cancer</a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="/zodiacsign/love?value=leo">Leo</a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="/zodiacsign/love?value=virgo">Virgo</a>
+                                </li>
+                            </ul>    
+                            
+                            <ul class="list-unstyled col-6 col-md-6 col-sm-4 offset-sm-2 offset-md-0 links-ul">
+                                <li>
+                                    <a href="/zodiacsign/love?value=libra">Libra</a>
+                                </li>
+                                <li>
+                                    <a href="/zodiacsign/love?value=scorpius">Scorpius</a>
+                                </li>
+                                <li>
+                                    <a href="/zodiacsign/love?value=sagittarius">Sagittarius</a>
+                                </li>
+                                <li>
+                                    <a href="/zodiacsign/love?value=capricorn">Capricorn</a>
+                                </li>
+                                <li>
+                                    <a href="/zodiacsign/love?value=aquarius">Aquarius</a>
+                                </li>
+                                <li>
+                                    <a href="/zodiacsign/love?value=pisces">Pisces</a>
+                                </li>
+    
+                            </ul>
+                        </div>
+            
+                    </div>
+
+                    <div class="col-md-3 mt-3 mb-md-0 mb-3">
+            
+                        <div class="ml-4">
+                            <h5 class="text-uppercase text-white footer-link-headings">Contact Us</h5>
+                
+                            <ul class="list-unstyled links-ul">
+                                <li>
+                                    <a href="mailto:{{{email}}}"><span><img class="mr-2" src="/images/mail.svg"></span>{{{email}}}</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="tel:{{{phone}}}"><span><img class="mr-2" src="/images/call.svg"></span>{{{phone}}}</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                    </div>
+            
+                </div>
+        
+            </div>
+        
+            <div class="footer-copyright justify-content-between row mr-5 mt-5 ml-5 pb-5">
+                <span class="social-icons">
+                    <a href="" target="_blank"><img class="mr-5" src="/images/facebook.svg"></a>
+                    <a href="" target="_blank"><img class="mr-5" src="/images/twitter-logo-silhouette.svg"></a>
+                    <a href="" target="_blank"><img class="mr-5" src="/images/instagram.svg"></a>
+                    <a href="" target="_blank"><img class="mr-5" src="/images/youtube-logo.svg"></a>
+                </span>
+                <span class="text-right">Copyright © 2022 {{{companyName}}}. All rights reserved.</span>
+            </div>
+        
+        </footer>
+    </main>
+</body>
+    <script src="/javascripts/home.js"></script>
+</html>
