@@ -11,7 +11,7 @@ const pagesRouter = require('./routes/pages');
 const config = require('./config.json');
 
 const connect = mongoose.connect(config.mongoUrl, {user: config.mongoUser, pass: String(config.mongoPass)})
-connect.then((db) => {
+connect.then(() => {
   console.info("Established connection with the database!");
 }, (err) => { console.log(err) });
 
