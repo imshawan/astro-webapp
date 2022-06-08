@@ -17,5 +17,9 @@ module.exports = {
             result.push(digit);
         }
         return result;
-    }
+    },
+    
+    timeStamp: function () {
+        return `[${new Date(Date.now()).toISOString()}]`;
+      }
 };

@@ -6,14 +6,19 @@ const logger = require('morgan');
 const bodyparser = require('body-parser');
 const { engine } = require('express-handlebars');
 const mongoose = require('mongoose');
+const chalk = require('chalk')
 
 const pagesRouter = require('./routes/pages');
+const { timeStamp } = require('./utilities');
+
 const config = require('./config.json');
+
+console.info(timeStamp(), chalk.magentaBright("Starting up the server..."))
 
 const connect = mongoose.connect(config.mongoUrl, {user: config.mongoUser, pass: String(config.mongoPass)})
 connect.then(() => {
-  console.info("Established connection with the database!");
-}, (err) => { console.log(err) });
+  console.info(timeStamp(), chalk.yellowBright("Established connection with the database!"));
+}, (err) => { throw new Error(err.message) });
 
 const app = express();
 
@@ -22,7 +27,24 @@ app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'views'));
 app.set('partials', path.join(__dirname, 'views', 'partials'));
 
-app.use(logger('dev'));
+app.set('trust proxy', true);
+console.info(timeStamp(), chalk.yellowBright("Trust Proxy enabled"))
+
+// Making a custom logging pattern
+logger.token("custom", `:timestamp ${chalk.magentaBright(":remote-addr")} - ${chalk.greenBright.bold(":method")} :url ${chalk.yellowBright("HTTP/:http-version")} (:status)`);
+logger.token('remote-addr', (req, res) => {
+  return req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+})
+logger.token('status', (req, res) => {
+  if (res.statusCode > 400) return chalk.redBright.bold(res.statusCode)
+  else return chalk.greenBright.bold(res.statusCode)
+})
+logger.token('timestamp', () => {
+  return timeStamp()
+})
+app.use(logger('custom'));
+console.info(timeStamp(), chalk.yellowBright("Loggings enabled"))
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
