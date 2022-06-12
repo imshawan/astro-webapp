@@ -727,6 +727,12 @@ opacity: 1;
   }
 }
 
+@media (max-width: 575.99px) {
+  .my-xs-4 {
+    margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem!important;
+  }
+ }
 @media (max-width: 600px) {
   .mobile-nav {
     display: block!important;
