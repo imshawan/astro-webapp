@@ -8,15 +8,15 @@ var app = require('../app');
 var debug = require('debug')('astro-webapp:server');
 var http = require('http');
 var chalk = require('chalk');
-
-const ENV = require('../config.json');
 const { timeStamp } = require('../utilities');
+
+require('dotenv').config({path: '../.env'});
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(ENV.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**

@@ -10,8 +10,9 @@ const chalk = require('chalk')
 
 const pagesRouter = require('./routes/pages');
 const { timeStamp } = require('./utilities');
+require('dotenv').config({path: '.env'});
 
-const config = require('./config.json');
+const config = process.env;
 
 console.info(timeStamp(), chalk.magentaBright("Starting up the server..."))
 
